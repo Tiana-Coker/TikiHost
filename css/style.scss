@@ -7,10 +7,10 @@ a{
     text-decoration: none;
 }
 .link-arrow{
-    text-transform: uppercase;
     color:$accent-color;
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
     &::after{
         content: "-->";
         margin-left: 5px;
@@ -26,4 +26,43 @@ a{
  }
 
 
+}
+
+/*Badges*/
+   
+/*Badge structure*/
+
+.badge{
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding:0.5rem 2rem;
+    white-space: nowrap;
+}
+
+/*Badge Skin*/
+
+.badge--primary{
+    background: $primary-color;
+    color:white;
+}
+
+.badge--secondary{
+    background:$secondary-color;
+    color:white;
+}
+
+.badge--small{
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:1024px){
+
+    .badge{
+        font-size: 1.5rem;
+    }
+
+    .badge--small{
+        font-size: 1.2rem;
+    }
 }
