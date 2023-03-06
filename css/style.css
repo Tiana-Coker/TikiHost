@@ -37,4 +37,28 @@ p {
   h1 {
     font-size: 8rem;
   }
+}
+/*Links*/
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  text-transform: uppercase;
+  color: #ff3400;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
