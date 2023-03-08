@@ -2,6 +2,9 @@
 
 @import "typography";
 
+*, *::after, *::before{
+    box-sizing: border-box;
+}
 /*Links*/
 a{
     text-decoration: none;
@@ -109,13 +112,13 @@ a{
 //Icons
 
 .icon-container{
-    background-color: $icon-color;
-    display: inline-flex;
-    justify-content: center;
     align-items: center;
-    height:64px;
-    width:64px;
+    background-color: $icon-color;
     border-radius: 100%;
+    display: inline-flex;
+    height:64px;
+    justify-content: center;
+    width:64px;
 }
 
 .icon{
@@ -126,4 +129,67 @@ a{
 .icon--primary{
 fill:$primary-color;
 
+}
+
+//buttons
+
+.btn{
+    border-radius: 40px;
+    border: 0;
+    cursor:pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin:1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn--accent{
+    background-color: $accent-color;
+    border:none;
+    color:white;
+    &:hover{
+        background-color: darken($accent-color, 10%);
+    }
+    
+}
+
+.btn--primary{
+    background-color: $primary-color;
+    &:hover{
+        background-color: darken($primary-color, 10%);
+    }
+   
+    color:white;
+}
+
+.btn--secondary{
+    background-color: $secondary-color;
+    color:white;
+    &:hover{
+        background-color: darken($secondary-color, 10%);
+    }
+}
+
+.btn--outline{
+    border:2px solid $headings-color;
+    color:$headings-color;
+    background-color: white;
+    &:hover{
+        background-color: $headings-color;
+        color:white;
+    }
+}
+
+.btn--block{
+    width:100%;
+    display:inline-block;
+}
+
+@media screen and (min-width:1024px){
+    .btn{
+        font-size: 1.5rem;
+    }
 }

@@ -38,6 +38,10 @@ p {
     font-size: 8rem;
   }
 }
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 /*Links*/
 a {
   text-decoration: none;
@@ -123,13 +127,13 @@ a {
   }
 }
 .icon-container {
-  background-color: #f3f9fa;
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
-  height: 64px;
-  width: 64px;
+  background-color: #f3f9fa;
   border-radius: 100%;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
 }
 
 .icon {
@@ -139,4 +143,63 @@ a {
 
 .icon--primary {
   fill: #2584ff;
+}
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--accent {
+  background-color: #ff3400;
+  border: none;
+  color: white;
+}
+.btn--accent:hover {
+  background-color: #cc2a00;
+}
+
+.btn--primary {
+  background-color: #2584ff;
+  color: white;
+}
+.btn--primary:hover {
+  background-color: #0069f1;
+}
+
+.btn--secondary {
+  background-color: #00d9ff;
+  color: white;
+}
+.btn--secondary:hover {
+  background-color: #00aecc;
+}
+
+.btn--outline {
+  border: 2px solid #1b0760;
+  color: #1b0760;
+  background-color: white;
+}
+.btn--outline:hover {
+  background-color: #1b0760;
+  color: white;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
