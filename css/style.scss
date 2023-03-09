@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 @import "typography";
 
@@ -190,6 +190,42 @@ fill:$primary-color;
 
 @media screen and (min-width:1024px){
     .btn{
+        font-size: 1.5rem;
+    }
+}
+
+//Inputs
+
+.input{
+    border-radius: $border-radius;
+    border:1px solid $border-color;
+    color:$headings-color;
+    font-size: 2rem;
+    outline:0;
+    padding:1.5rem 3.5rem;
+    
+}
+
+::placeholder{
+    color:#cdcbd7;
+}
+
+.input-group{
+    border:1px solid $border-color;  
+    border-radius: $border-radius;
+    display:flex;
+    .input{
+        border:0;
+        flex-grow: 1;
+        padding:1.5rem 1rem;
+    }
+    .btn{
+        margin:4px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .input{
         font-size: 1.5rem;
     }
 }
