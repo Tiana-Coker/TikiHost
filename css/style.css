@@ -157,13 +157,26 @@ a {
   width: 64px;
 }
 
+.icon-container--accent {
+  background: #ff3400;
+}
+
 .icon {
   width: 40px;
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   fill: #2584ff;
+}
+
+.icon--white {
+  fill: white;
 }
 
 /*********************
@@ -283,7 +296,7 @@ a {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 800px;
   overflow: hidden;
 }
 
@@ -367,7 +380,7 @@ a {
 *                    *
 *********************/
 .quote {
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: italic;
   color: #5c5577;
   line-height: 1.3;
@@ -383,21 +396,22 @@ a {
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-top: -1rem;
 }
 
 .media__body {
-  margin-left: 2rem;
-  line-height: 2.2rem;
+  margin-left: 1rem;
+  line-height: 1.5rem;
 }
 .media__body .quote__author, .media__body .quote__company {
   font-weight: 500;
   font-style: normal;
 }
 .media__body .quote__author {
-  font-size: 2.5rem;
+  font-size: 1.9rem;
 }
 .media__body .quote__company {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: #1b0760;
   opacity: 0.4;
 }
@@ -433,4 +447,26 @@ a {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+/*********************
+*                    *
+*  Testimonial       *
+   component         *
+*                    *
+*********************/
+.testimonial {
+  padding: 4rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image img {
+  width: 100%;
+  margin-bottom: -8px;
+}
+.testimonial__image .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
 }/*# sourceMappingURL=style.css.map */
