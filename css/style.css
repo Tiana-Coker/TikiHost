@@ -42,7 +42,11 @@ p {
   box-sizing: border-box;
 }
 
-/*Links*/
+/*********************
+*                    *
+* links component    *
+*                    *
+*********************/
 a {
   text-decoration: none;
 }
@@ -66,7 +70,11 @@ a {
     font-size: 1.5rem;
   }
 }
-/*Badges*/
+/*********************
+*                    *
+* badges component   *
+*                    *
+*********************/
 /*Badge structure*/
 .badge {
   border-radius: 20px;
@@ -76,7 +84,11 @@ a {
   white-space: nowrap;
 }
 
-/*Badge Skin*/
+/*********************
+*                    *
+* badge component    *
+*                    *
+*********************/
 .badge--primary {
   background: #126de4;
   color: white;
@@ -99,7 +111,11 @@ a {
     font-size: 1.2rem;
   }
 }
-/*Lists*/
+/*********************
+*                    *
+* list component     *
+*                    *
+*********************/
 .list {
   list-style: none;
   padding-left: 0;
@@ -126,6 +142,11 @@ a {
     padding-left: 0;
   }
 }
+/*********************
+*                    *
+* Icons component    *
+*                    *
+*********************/
 .icon-container {
   align-items: center;
   background-color: #f3f9fa;
@@ -145,6 +166,11 @@ a {
   fill: #2584ff;
 }
 
+/*********************
+*                    *
+* buttons component  *
+*                    *
+*********************/
 .btn {
   border-radius: 40px;
   border: 0;
@@ -203,6 +229,11 @@ a {
     font-size: 1.5rem;
   }
 }
+/*********************
+*                    *
+*   input component  *
+*                    *
+*********************/
 .input {
   border-radius: 30px;
   border: 1px solid #ccc;
@@ -239,6 +270,11 @@ a {
     font-size: 1.5rem;
   }
 }
+/*********************
+*                    *
+*   card component   *
+*                    *
+*********************/
 .plan {
   margin: 2rem;
 }
@@ -304,4 +340,23 @@ a {
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
+}
+/*********************
+*                    *
+*   popular card     *
+*                    *
+*********************/
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  background-size: 33.24px 105.24px;
+  background: url(../images/p.svg) no-repeat 0 0;
+  content: "";
+  display: inline-block;
+  height: 105.24px;
+  position: absolute;
+  right: 5%;
+  top: -4%;
+  width: 33.24px;
 }/*# sourceMappingURL=style.css.map */
