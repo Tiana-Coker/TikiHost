@@ -654,7 +654,9 @@ a {
   color: #7b858b;
 }
 
-.block--dark h1, .block--dark h2, .block--dark h3 {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
 }
 
@@ -673,4 +675,26 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/*********************
+*                    *
+* Media component    *
+*                    *
+*********************/
+.media {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
