@@ -299,6 +299,10 @@ a {
 
 .plan {
   margin: 2rem;
+  transition:transform .2s ease-out;
+  &:hover{
+    transform:scale(1.05);
+  }
 }
 
 .card {
@@ -377,6 +381,14 @@ a {
 *                    *
 *********************/
 
+.plan--popular{
+  
+transform:scale(1.1);
+&:hover{
+  transform:scale(1.15);
+}
+
+}
 .plan--popular {
   .card__header {
     position: relative;
@@ -384,14 +396,14 @@ a {
 
   .card__header::before {
     background-size: 33.24px 105.24px;
-    background: url(../images/p.svg) no-repeat 0 0;
+    background: url(../images/popula.svg) no-repeat 0 0;
     content: "";
     display: inline-block;
-    height: 105.24px;
+    height: 137.24px;
     position: absolute;
     right: 5%;
-    top: -4%;
-    width: 33.24px;
+    top: -14%;
+    width: 45.24px;
   }
 }
 
@@ -785,4 +797,28 @@ a {
       margin:0 auto;
     }
 
+}
+
+/*********************
+*                    *
+*   block plans      *
+*                    *
+*********************/
+
+.block-plans{
+  .grid{
+    gap:4rem;
+  }
+  
+  .card{
+      max-width:500px;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .block-plans{
+    .grid{
+      gap:0;
+    }
+  }
 }
