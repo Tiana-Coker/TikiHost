@@ -785,4 +785,12 @@ a {
   .block-plans .grid {
     gap: 0;
   }
+}
+/*********************
+*                    *
+*    Features        *
+*                    *
+*********************/
+.feature__heading {
+  margin: 1rem 0;
 }/*# sourceMappingURL=style.css.map */
