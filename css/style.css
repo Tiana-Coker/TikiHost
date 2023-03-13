@@ -196,6 +196,10 @@ a {
   fill: white;
 }
 
+.icon--secondary {
+  fill: #1b0760;
+}
+
 /*********************
 *                    *
 * buttons component  *
@@ -734,8 +738,8 @@ a {
 
 @media screen and (min-width: 768px) {
   /* .hero{
-     padding-top: 0;
-   }*/
+      padding-top: 0;
+    }*/
   .hero__content {
     text-align: left;
     align-self: center;
@@ -791,6 +795,33 @@ a {
 *    Features        *
 *                    *
 *********************/
+.feature {
+  gap: 4rem 2rem;
+  align-items: center;
+  margin: -44px 0;
+}
+
 .feature__heading {
   margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    margin: -46px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feature {
+    margin: -116px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feature__flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */
