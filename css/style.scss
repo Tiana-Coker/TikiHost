@@ -247,6 +247,8 @@ a {
 .btn--stretched {
   padding-left: 6rem;
   padding-right: 6rem;
+  padding-top:2rem;
+  padding-bottom: 2rem;
 }
 @media screen and (min-width: 1024px) {
   .btn {
@@ -337,7 +339,13 @@ a {
 .card__body,
 .card__header {
   padding: 2rem 7%;
+  color:$headings-color;
 }
+
+  .plan__margin{
+    margin-top: -6.9rem;
+}
+
 
 .plan__name {
   font-size: 2.4rem;

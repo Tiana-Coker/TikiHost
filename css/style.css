@@ -5,11 +5,13 @@ html {
 body {
   color: #918ca4;
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #1b0760;
   margin-bottom: 1rem;
   line-height: 1.1;
@@ -265,6 +267,8 @@ a {
 .btn--stretched {
   padding-left: 6rem;
   padding-right: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -352,6 +356,11 @@ a {
 .card__body,
 .card__header {
   padding: 2rem 7%;
+  color: #1b0760;
+}
+
+.plan__margin {
+  margin-top: -6.9rem;
 }
 
 .plan__name {
