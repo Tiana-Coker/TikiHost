@@ -553,18 +553,19 @@ a {
 .callout__content {
   text-align: center;
 }
+.callout-signup{
+  transform: translateY(5rem);
+}
 
 @media screen and (min-width: 768px) {
   .callout {
     .grid--1x2 {
-      grid-template-columns: auto 1fr;
+      grid-template-columns: 1fr auto;
     }
   }
   .callout__content {
     text-align: left;
-    p {
-      font-size: 2rem;
-    }
+    
   }
 
   .callout .btn {
@@ -859,6 +860,25 @@ a {
   .feature__flex {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+/* Showcase Block */
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .block-showcase__image {
+    justify-self: end;
+  }
+  .block-showcase__image>img {
+    width: auto;
+    max-width: 700px;
+   
+  }
+
+  .block__align{
+    align-items: center;
   }
 }
 
